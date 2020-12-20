@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText textIn;
     private EditText textDel;
     private TextView textView;
+    private AATree tree = new AATree();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public void Insertar(View view){
         String valor = textIn.getText().toString();
         int numValor = Integer.parseInt(valor);
+        textIn.setText("");
     }
 
     public void Eliminar(View view){
