@@ -10,54 +10,24 @@
         android:id="@+id/btnIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:onClick="Insertar"
         android:text="Insertar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textDel"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnDel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:onClick="Eliminar"
-        android:text="Eliminar"
-        app:layout_constraintBottom_toTopOf="@+id/viewNodes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIn"
-        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/textIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Valor a insertar"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/textDel"
         app:layout_constraintEnd_toStartOf="@+id/btnIn"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78" />
-
-    <EditText
-        android:id="@+id/textDel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:ems="10"
-        android:hint="Valor a eliminar"
-        android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/btnDel"
-        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintHorizontal_bias="0.754"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,12 +35,10 @@
         android:id="@+id/viewNodes"
         android:layout_width="312dp"
         android:layout_height="430dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="4dp"
         android:text="See the tree"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDel"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

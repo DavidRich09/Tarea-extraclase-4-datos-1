@@ -85,7 +85,7 @@ public class AATree {
 
                     next.add(null);
                     next.add(null);
-                } else {
+                } else if (n != null){
                     int datoint = n.element;
                     String aa = String.valueOf(datoint);
                     line.add(aa);

@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         textIn = (EditText) findViewById(R.id.textIn);
-        textDel = (EditText) findViewById(R.id.textDel);
         textView = (TextView) findViewById(R.id.viewNodes);
     }
 
