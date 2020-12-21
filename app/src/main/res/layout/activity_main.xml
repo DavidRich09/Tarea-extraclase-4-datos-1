@@ -57,7 +57,7 @@
         android:hint="Valor a eliminar"
         android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/btnDel"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.811"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -66,11 +66,11 @@
         android:layout_width="312dp"
         android:layout_height="430dp"
         android:layout_marginTop="32dp"
-        android:text="TextView"
+        android:text="See the tree"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDel"
-        app:layout_constraintVertical_bias="0.102" />
+        app:layout_constraintVertical_bias="0.022" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,12 +27,16 @@ public class MainActivity extends AppCompatActivity {
     public void Insertar(View view){
         String valor = textIn.getText().toString();
         int numValor = Integer.parseInt(valor);
-        textIn.setText("");
+        tree.insert(numValor);
+        Mostrar(tree.print(tree.getRoot()));
+        tree.ResetString();
     }
 
     public void Eliminar(View view){
         String valor = textDel.getText().toString();
         int numValor = Integer.parseInt(valor);
+        Mostrar(tree.print(tree.getRoot()));
+        tree.ResetString();
     }
 
     public void Mostrar(String nodes){

@@ -2,8 +2,8 @@ package com.example.lista;
 
 public class AANode {
 
-    private AANode left,right;
-    private int element, level;
+    public AANode left,right;
+    public int element, level;
 
     public AANode(){
         this.element = 0;
