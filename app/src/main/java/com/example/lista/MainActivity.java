@@ -12,12 +12,19 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/**
+ * Clase para ejecutar la aplicacion. Atributos que son un cuadro para ingreasr texto, un TextView para ver el arbol y el arbol AA.
+ */
 public class MainActivity extends AppCompatActivity {
 
     private EditText textIn;
     private TextView textView;
     private AATree tree = new AATree();
 
+    /**
+     * Crea los componentes
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.viewNodes);
     }
 
+    /**
+     * Insertar un numero en el arbol
+     * @param view
+     */
     public void Insertar(View view){
         String valor = textIn.getText().toString();
         int numValor = Integer.parseInt(valor);
@@ -35,7 +46,10 @@ public class MainActivity extends AppCompatActivity {
         tree.ResetString();
     }
 
-
+    /**
+     * Mostar el arbol, acercandose a la estructura que este deberia de tener fuera del codigo.
+     * @param nodes
+     */
     public void Mostrar(String nodes){
         textView.setText(nodes);
         textView.setMovementMethod(new ScrollingMovementMethod());

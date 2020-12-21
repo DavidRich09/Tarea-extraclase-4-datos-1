@@ -3,6 +3,9 @@ package com.example.lista;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase del arbol AA
+ */
 public class AATree {
     private AANode root;
     public String forma = "";
@@ -12,10 +15,20 @@ public class AATree {
         root = node;
     }
 
+    /**
+     * Metodo que se llama para llamar al metodo insertion que inserta desde la raiz el nuevo numero.
+     * @param num
+     */
     public void insert(int num){
         root = insertion(num, root);
     }
 
+    /**
+     * Metodo que se encarga de colocar dentro del arbol el valor introducido
+     * @param num
+     * @param node1
+     * @return AANode
+     */
     private AANode insertion(int num, AANode node1){
         if (node1 == node){
             node1 = new AANode(num, node, node);
@@ -31,6 +44,11 @@ public class AATree {
         return node1;
     }
 
+    /**
+     * Metodo para ordenar el arbol por la izquierda
+     * @param node1
+     * @return
+     */
     public AANode Skew(AANode node1){
         if (node1 == node){
             return node;
@@ -46,6 +64,11 @@ public class AATree {
             return node1;
     }
 
+    /**
+     * Metodo para ordenar el arbol por la derecha
+     * @param node1
+     * @return
+     */
     public AANode Split(AANode node1){
         if (node1 == node){
             return node;
@@ -62,6 +85,11 @@ public class AATree {
             return node1;
     }
 
+    /**
+     * Metodo para mostrar el arbol en pantalla
+     * @param root
+     * @return
+     */
     public String print(AANode root)
     {
         List<List<String>> lines = new ArrayList<List<String>>();
@@ -182,10 +210,17 @@ public class AATree {
         return forma;
     }
 
+    /**
+     * Metodo que obtiene la raiz
+     * @return
+     */
     public AANode getRoot(){
         return root;
     }
 
+    /**
+     * Reset al atributo forma
+     */
     public void ResetString(){
         forma = "";
     }
