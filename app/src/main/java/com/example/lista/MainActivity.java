@@ -3,6 +3,11 @@ package com.example.lista;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.method.MovementMethod;
+import android.text.method.ScrollingMovementMethod;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -10,7 +15,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private EditText textIn;
-    private EditText textDel;
     private TextView textView;
     private AATree tree = new AATree();
 
@@ -31,15 +35,10 @@ public class MainActivity extends AppCompatActivity {
         tree.ResetString();
     }
 
-    public void Eliminar(View view){
-        String valor = textDel.getText().toString();
-        int numValor = Integer.parseInt(valor);
-        Mostrar(tree.print(tree.getRoot()));
-        tree.ResetString();
-    }
 
     public void Mostrar(String nodes){
         textView.setText(nodes);
+        textView.setMovementMethod(new ScrollingMovementMethod());
     }
 
 }

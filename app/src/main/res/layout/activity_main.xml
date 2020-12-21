@@ -35,10 +35,12 @@
         android:id="@+id/viewNodes"
         android:layout_width="312dp"
         android:layout_height="430dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="28dp"
+        android:scrollIndicators="bottom"
+        android:scrollHorizontally="true"
         android:text="See the tree"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
